@@ -2,22 +2,22 @@
 
 This is a ***straightforward*** application consists of a `server` (**stores information about tasks**) and a `client` (**that makes requests to the server to query/modify the database**).
 
-To interact with the application, refer to the provided endpoints and their functionalities documented in the task description table. You can use the client script or tools like `Postman` to test the server endpoints, ***server URL*** [LOOPBACK:PORT](<http://127.0.0.1:5000/>).
+To interact with the application, refer to the provided endpoints and their functionalities documented in the task description table. You can use the client script or tools like `Postman` to test the server endpoints, **server URL** [LoopbackAddr:Port](<http://127.0.0.1:5000/>).
 
 **Type of (`Operations` - `Requests`):**
 
 | **Operation**           | URL                                          |**Type**| Request Body                  | Response                     |
 |:-----------------------:|----------------------------------------------|:------:|-------------------------------|------------------------------|
-| **Sanity**              | ...//sanity               |**GET** | `{}`                          | `{"status_code": "200"}`     |
-| **Add Task**            | ...//add                 |**POST**| `{ "id": "id", "name": "name of employee", "description": "description", "priority": "priority", "status": "not done" }` | `{"status_code": "200"}`     |
-| **Print Tasks**          | ...//print              |**GET**| `{}`                          | JSON containing all tasks   |
-| **Print Completed Tasks**| ...//print/completed    |**GET**| `{}`                          | JSON containing completed tasks |
-| **Delete Task**         | ...//delete/id           |**DELETE**| `{}`                          | `{"status_code": "200"}`     |
-| **Delete All Tasks**     | ...//delete/al>l        |**DELETE**| `{}`                          | `{"status_code": "200"}`     |
-| **Update Task**          | ...//update/id          |**POST**| `{}`                          | `{"status_code": "200"}`     |
-| **Update Task Assignee** | ...//update/id/name     |**POST**| `{}`                          | `{"status_code": "200"}`     |
-| **Save**                 | ...//save               |**POST**| `{}`                          | `{"status_code": "200"}`     |
-| **Load**                 | ...//load               |**POST**| `{}`                          | `{"status_code": "200"}`     |
+| **Sanity**              | [.../](<http://127.0.0.1:5000/>)sanity               |**GET** | `{}`                          | `{"status_code": "200"}`     |
+| **Add Task**            | [.../](<http://127.0.0.1:5000/>)add                 |**POST**| `JSON ObjectNode`     |
+| **Print Tasks**          | [.../](<http://127.0.0.1:5000/>)print              |**GET**| `{}`                          | JSON containing all tasks   |
+| **Print Completed Tasks**| [.../](<http://127.0.0.1:5000/>)print/completed    |**GET**| `{}`                          | JSON containing completed tasks |
+| **Delete Task**         | [.../](<http://127.0.0.1:5000/>)delete/id           |**DELETE**| `{}`                          | `{"status_code": "200"}`     |
+| **Delete All Tasks**     | [.../](<http://127.0.0.1:5000/>)delete/al>l        |**DELETE**| `{}`                          | `{"status_code": "200"}`     |
+| **Update Task**          | [.../](<http://127.0.0.1:5000/>)update/id          |**POST**| `{}`                          | `{"status_code": "200"}`     |
+| **Update Task Assignee** | [.../](<http://127.0.0.1:5000/>)update/id/name     |**POST**| `{}`                          | `{"status_code": "200"}`     |
+| **Save**                 | [.../](<http://127.0.0.1:5000/>)save               |**POST**| `{}`                          | `{"status_code": "200"}`     |
+| **Load**                 | [.../](<http://127.0.0.1:5000/>)load               |**POST**| `{}`                          | `{"status_code": "200"}`     |
 
 **Note:** `save` and `load` operations save and load the state of the database respectively in a JSON file `database.json`.
 
