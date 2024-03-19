@@ -9,9 +9,9 @@ To interact with the application, refer to the provided endpoints and their func
 | **Operation**           | URL                                          |**Type**| Request Body                  | Response                     |
 |:-----------------------:|----------------------------------------------|:------:|-------------------------------|------------------------------|
 | **Sanity**              | [.../](<http://127.0.0.1:5000/>)sanity               |**GET** | `{}`                          | `{"status_code": "200"}`     |
-| **Add Task**            | [.../](<http://127.0.0.1:5000/>)add                 |**POST**| `JSON ObjectNode`     |
-| **Print Tasks**          | [.../](<http://127.0.0.1:5000/>)print              |**GET**| `{}`                          | JSON containing all tasks   |
-| **Print Completed Tasks**| [.../](<http://127.0.0.1:5000/>)print/completed    |**GET**| `{}`                          | JSON containing completed tasks |
+| **Add Task**            | [.../](<http://127.0.0.1:5000/>)add                 |**POST**| `ObjectNode`                 | `{"status_code": "200"}`  |
+| **Print Tasks**          | [.../](<http://127.0.0.1:5000/>)print              |**GET**| `{}`                          | **JSON** with all tasks   |
+| **Print Completed Tasks**| [.../](<http://127.0.0.1:5000/>)print/completed    |**GET**| `{}`                          | **JSON** with completed tasks |
 | **Delete Task**         | [.../](<http://127.0.0.1:5000/>)delete/id           |**DELETE**| `{}`                          | `{"status_code": "200"}`     |
 | **Delete All Tasks**     | [.../](<http://127.0.0.1:5000/>)delete/all        |**DELETE**| `{}`                          | `{"status_code": "200"}`     |
 | **Update Task**          | [.../](<http://127.0.0.1:5000/>)update/id          |**POST**| `{}`                          | `{"status_code": "200"}`     |
