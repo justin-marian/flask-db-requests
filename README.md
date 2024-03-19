@@ -13,7 +13,7 @@ To interact with the application, refer to the provided endpoints and their func
 | **Print Tasks**          | [.../](<http://127.0.0.1:5000/>)print              |**GET**| `{}`                          | JSON containing all tasks   |
 | **Print Completed Tasks**| [.../](<http://127.0.0.1:5000/>)print/completed    |**GET**| `{}`                          | JSON containing completed tasks |
 | **Delete Task**         | [.../](<http://127.0.0.1:5000/>)delete/id           |**DELETE**| `{}`                          | `{"status_code": "200"}`     |
-| **Delete All Tasks**     | [.../](<http://127.0.0.1:5000/>)delete/al>l        |**DELETE**| `{}`                          | `{"status_code": "200"}`     |
+| **Delete All Tasks**     | [.../](<http://127.0.0.1:5000/>)delete/all        |**DELETE**| `{}`                          | `{"status_code": "200"}`     |
 | **Update Task**          | [.../](<http://127.0.0.1:5000/>)update/id          |**POST**| `{}`                          | `{"status_code": "200"}`     |
 | **Update Task Assignee** | [.../](<http://127.0.0.1:5000/>)update/id/name     |**POST**| `{}`                          | `{"status_code": "200"}`     |
 | **Save**                 | [.../](<http://127.0.0.1:5000/>)save               |**POST**| `{}`                          | `{"status_code": "200"}`     |
