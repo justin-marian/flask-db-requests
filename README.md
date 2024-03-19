@@ -10,16 +10,16 @@ To interact with the application, refer to the provided endpoints and their func
 
 | **Operation**           | URL                                          |**Type**| Request Body                  | Response                     |
 |:-----------------------:|----------------------------------------------|:------:|-------------------------------|------------------------------|
-| **Sanity**              | [.../](<http://127.0.0.1:5000/>)sanity               |**GET** | `{}`                          | `{"status_code": "200"}`     |
-| **Add Task**            | [.../](<http://127.0.0.1:5000/>)add                 |**POST**| `ObjectNode`                 | `{"status_code": "200"}`  |
-| **Print Tasks**          | [.../](<http://127.0.0.1:5000/>)print              |**GET**| `{}`                          | **JSON** with all tasks   |
-| **Print Completed Tasks**| [.../](<http://127.0.0.1:5000/>)print/completed    |**GET**| `{}`                          | **JSON** with completed tasks |
-| **Delete Task**         | [.../](<http://127.0.0.1:5000/>)delete/id           |**DELETE**| `{}`                          | `{"status_code": "200"}`     |
-| **Delete All Tasks**     | [.../](<http://127.0.0.1:5000/>)delete/all        |**DELETE**| `{}`                          | `{"status_code": "200"}`     |
-| **Update Task**          | [.../](<http://127.0.0.1:5000/>)update/id          |**POST**| `{}`                          | `{"status_code": "200"}`     |
-| **Update Task Assignee** | [.../](<http://127.0.0.1:5000/>)update/id/name     |**POST**| `{}`                          | `{"status_code": "200"}`     |
-| **Save**                 | [.../](<http://127.0.0.1:5000/>)save               |**POST**| `{}`                          | `{"status_code": "200"}`     |
-| **Load**                 | [.../](<http://127.0.0.1:5000/>)load               |**POST**| `{}`                          | `{"status_code": "200"}`     |
+| **Sanity**              | [.../sanity](<http://127.0.0.1:5000/sanity>)               |**GET** | `{}`                          | `{"status_code": "200"}`     |
+| **Add Task**            | [.../add](<http://127.0.0.1:5000/add>)                 |**POST**| `Task ObjectNode`                 | `{"status_code": "200"}`  |
+| **Print Tasks**          | [.../print](<http://127.0.0.1:5000/>)              |**GET**| `{}`                          | **JSON** with all tasks   |
+| **Print Completed Tasks**| [.../print/completed](<http://127.0.0.1:5000/print/completed>)    |**GET**| `{}`                          | **JSON** with completed tasks |
+| **Delete Task**         | [.../delete/id](<http://127.0.0.1:5000/delete/id>)      |**DELETE**| `{}`                          | `{"status_code": "200"}`     |
+| **Delete All Tasks**     | [.../delete/all](<http://127.0.0.1:5000/delete/all>)       |**DELETE**| `{}`                          | `{"status_code": "200"}`     |
+| **Update Task**          | [.../update/id](<http://127.0.0.1:5000/update/id>)        |**POST**| `{}`                          | `{"status_code": "200"}`     |
+| **Update Task Assignee** | [.../update/id/name](<http://127.0.0.1:5000/update/id/name>)     |**POST**| `{}`                          | `{"status_code": "200"}`     |
+| **Save**                 | [.../save](<http://127.0.0.1:5000/save>)               |**POST**| `{}`                          | `{"status_code": "200"}`     |
+| **Load**                 | [.../load](<http://127.0.0.1:5000/load>)               |**POST**| `{}`                          | `{"status_code": "200"}`     |
 
 **Note:** `save` and `load` operations save and load the state of the database respectively in a JSON file `database.json`.
 
