@@ -2,7 +2,9 @@
 
 This is a ***straightforward*** application consists of a `server` (**stores information about tasks**) and a `client` (**that makes requests to the server to query/modify the database**).
 
-To interact with the application, refer to the provided endpoints and their functionalities documented in the task description table. You can use the client script or tools like `Postman` to test the server endpoints, **server URL** [LoopbackAddr:Port](<http://127.0.0.1:5000/>).
+To interact with the application, refer to the provided endpoints and their functionalities documented in the task description table. You can use the client script or tools like `Postman` to test the server endpoints.
+
+**Server URL:** [LoopbackAddr:Port](<http://127.0.0.1:5000/>)
 
 **Type of (`Operations` - `Requests`):**
 
